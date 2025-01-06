@@ -1,21 +1,29 @@
 # Project 3: Spots
 
-### Overview  
+## Project Decription
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+_This project purpose is to replicate the everyday use of social media applications, by implementing adaptive design. Nice features where included like hover states, and buttons; wich will eventually allow the users to interact with the app. The desing is also very minimalist with lots of room for improvements of UI/UX design, and is also fit for multiple devices like: smarthphones, tablets, and computers._
+
+## Technology Implemented
+
+_This project was developed by implementing HTML and CSS properties, styles and structures._
+
+### Here's a list of the implemented technologies:
+
+- BEM Methodology
+- Media Queries
+- Hover States
+- Multiple Display Properties, such as:
+  - Display: Grid;
+  - Display: Flex;
+  - Display: Block;
+- File Structures, and File Paths through @import(URL)
+- Font applications
+
+## Here's the project!
+
+https://Gammy-code.github.io/se_project_spots
+
+## Educational Video
+
+TO-DO
