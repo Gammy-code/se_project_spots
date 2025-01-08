@@ -26,4 +26,4 @@ https://Gammy-code.github.io/se_project_spots
 
 ## Educational Video
 
-TO-DO
+https://1drv.ms/v/c/f3366758412214b5/EeDqYG3J37pKo15Nb0-XP4oBmDSAY56RmOkAcBKuquv_Qw?e=XDQe6x

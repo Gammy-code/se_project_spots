@@ -9,7 +9,7 @@
   margin-right: 20px;
   height: 190px;
   width: 190px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .profile__column {
   display: flex;
@@ -48,7 +48,7 @@
   opacity: 70%;
 }
 .profile__edit-button {
-  margin-top: 114px;
+  margin-top: auto;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1;
@@ -58,16 +58,17 @@
   background-color: #fcf5e5;
   text-align: left;
   padding: 0;
-  color: rgba(33, 33, 33, 0.7);
+  color: #212121;
+  opacity: 70%;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 .profile__edit-button:hover {
-  color: rgba(33, 33, 33, 1);
+  opacity: 1;
 }
 
 .profile__add-button {
-  margin: 138px 0 20px auto;
+  margin: auto 0 0 auto;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   line-height: 1;
   font-size: 16px;
@@ -85,7 +86,6 @@
   transition: color 0.3s ease;
 }
 .profile__add-button:hover {
-  background: #212121;
   opacity: 80%;
 }
 
