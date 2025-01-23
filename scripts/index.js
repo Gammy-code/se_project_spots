@@ -43,17 +43,12 @@ const editModalDescriptionInput = editProfileModal.querySelector(
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
 
-function openModal() {
-  editProfileModal.classList.add("modal_opened");
-}
-
 profileEditButton.addEventListener("click", openModal);
 
 function openModal() {
   editModalNameInput.value = profileName.textContent;
   editProfileModal.classList.add("modal_opened");
   editModalDescriptionInput.value = profileDescription.textContent;
-  editProfileModal.classList.add("modal_opened");
 }
 
 function closeModal() {
