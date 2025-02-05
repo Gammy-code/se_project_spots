@@ -40,7 +40,30 @@
   opacity: 1;
   transition: color 0.3s ease;
 }
-
+.card__like-button_liked {
+  background-image: url(../images/heart-liked.svg);
+  opacity: 1;
+}
+.card__like-button_liked:hover {
+  background-image: url(../images/heart-liked-hover.svg);
+}
+.card__delete-button {
+  background-image: url(../images/Delete\ Icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  border: none;
+  position: absolute;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-left: 371px;
+  margin-right: 10px;
+}
+.card__delete-button:hover {
+  background-image: url(../images/delete-hover.svg);
+}
 @media screen and (max-width: 627px) {
   .card {
     max-width: 288px;
