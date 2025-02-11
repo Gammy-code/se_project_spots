@@ -131,6 +131,7 @@
   .modal__container_type_preview {
     padding: 0;
     width: unset;
+    max-width: none;
   }
   .modal__title {
     font-size: 20px;
@@ -156,7 +157,8 @@
     right: -10px;
   }
   .modal__image {
-    width: 288px;
+    max-width: 288px;
     border-radius: 4px;
+    width: fit-content;
   }
 }
