@@ -54,6 +54,7 @@ const previewModalCaptionEl = previewModal.querySelector(".modal__caption");
 const previewModalCloseButton = previewModal.querySelector(
   ".modal__close-button_type_preview"
 );
+const cardSubmitButton = modalCard.querySelector(".modal__submit-button");
 
 cardModalCloseButton.addEventListener("click", () => {
   closeModal(modalCard);
@@ -65,6 +66,10 @@ cardModalOpenButton.addEventListener("click", () => {
 profileEditButton.addEventListener("click", () => {
   editModalDescriptionInput.value = profileDescription.textContent;
   editModalNameInput.value = profileName.textContent;
+  resetValidation(editFormElement, [
+    editModalDescriptionInput,
+    editModalNameInput,
+  ]);
   openModal(editProfileModal);
 });
 
@@ -127,6 +132,7 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   cardForm.reset();
+  disableButton(cardSubmitButton);
   closeModal(modalCard);
 }
 cardForm.addEventListener("submit", handleAddCardSubmit);

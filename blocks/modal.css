@@ -110,6 +110,15 @@
   font-weight: 500;
   line-height: 1;
 }
+.modal__input_type_error {
+  border: 1px solid #ff000099;
+  opacity: 60%;
+}
+.modal__error {
+  display: block;
+  margin-top: 8px;
+  color: #ff0000b2;
+}
 .modal__submit-button {
   width: 156px;
   padding: 18px 0;
