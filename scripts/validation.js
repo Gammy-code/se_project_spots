@@ -1,13 +1,22 @@
+const settings = {
+  formSelector: ".modal__form",
+  inputSelector: ".modal__input",
+  submitButtonSelector: ".modal__submit-button",
+  inactiveButtonClass: "modal__button_disabled",
+  inputErrorClass: "modal__input_type_error",
+  errorClass: "modal__error_visible",
+};
+
 const showInputError = (formEl, inputEl, errorMsg, config) => {
-  const errorMsgEl = formEl.querySelector(`.${inputEl.id}-error`);
+  const errorMsgEl = formEl.querySelector(`#${inputEl.id}-error`);
   inputEl.classList.add(config.inputErrorClass);
   errorMsgEl.textContent = errorMsg;
   errorMsgEl.classList.add(config.errorClass);
 };
 
 const hideInputError = (formEl, inputEl, config) => {
-  const errorMsgEl = formEl.querySelector(`.${inputEl.id}-error`);
-  inputEl.classList.remove(config.inputErrorClass);
+  const errorMsgEl = formEl.querySelector(`#${inputEl.id}-error`);
+  // inputEl.classList.remove(config.inputErrorClass);
   errorMsgEl.classList.remove(config.errorClass);
   errorMsgEl.textContent = "";
 };
@@ -39,14 +48,14 @@ const disableButton = (buttonEl) => {
 
 const resetValidation = (formEl, inputList) => {
   inputList.forEach((input) => {
-    hideInputError(formEl, input);
+    hideInputError(formEl, input, settings);
   });
 };
 
 const setEventListeners = (formEl, config) => {
   const inputList = Array.from(formEl.querySelectorAll(config.inputSelector));
   const buttonEl = formEl.querySelector(config.submitButtonSelector);
-
+  console.log(formEl, config);
   toggleButtonState(inputList, buttonEl);
 
   inputList.forEach((inputEl) => {
@@ -58,17 +67,12 @@ const setEventListeners = (formEl, config) => {
 };
 
 const enableValidation = (config) => {
+  console.log(config);
+  debugger;
   const formList = document.querySelectorAll(config.formSelector);
   formList.forEach((formEl) => {
     setEventListeners(formEl, config);
   });
 };
-const settings = {
-  formSelector: ".modal__form",
-  inputSelector: ".modal__input",
-  submitButtonSelector: ".modal__submit-button",
-  inactiveButtonClass: "modal__button_disabled",
-  inputErrorClass: "modal__input_type_error",
-  errorClass: "modal__error_visible",
-};
+
 enableValidation(settings);
