@@ -118,6 +118,7 @@
   display: block;
   margin-top: 8px;
   color: #ff0000b2;
+  opacity: 70%;
 }
 .modal__submit-button {
   width: 156px;
@@ -128,6 +129,9 @@
   gap: 8px;
   color: #fcf5e5;
   cursor: pointer;
+}
+.modal__submit-button_disabled {
+  opacity: 50%;
 }
 @media screen and (max-width: 627px) {
   .modal {
