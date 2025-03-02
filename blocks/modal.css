@@ -111,14 +111,16 @@
   line-height: 1;
 }
 .modal__input_type_error {
-  border: 1px solid #ff000099;
+  border: 1px solid #ff0000;
   opacity: 60%;
 }
 .modal__error {
   display: block;
-  margin-top: 8px;
-  color: #ff0000b2;
-  opacity: 70%;
+  color: #ff0000;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17.6px;
 }
 .modal__submit-button {
   width: 156px;
